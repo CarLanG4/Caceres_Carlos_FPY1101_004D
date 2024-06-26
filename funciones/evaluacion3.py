@@ -23,6 +23,14 @@ def ver_estudiantes(listaAlumnos):
     for x in listaAlumnos:
         print(x)
 
+def guardar_alumnos():
+            matriz=[[nombreAlumno, edadAlumno,cursoAlumno, promedioAlumno]]
+    with open('Archivo_alumnos.csv','a', newline='',encoding='utf-8') as archivo_csv: #le cambie la w a la 'a'
+        escritor_csv = csv.writer(archivo_csv)
+        escritor_csv.writerow(['NOMBRE', 'EDAD', 'CURSO', 'PROMEDIO'])
+        escritor_csv.writerows(matriz)
+    print("GUARDADADO exitosamente.")
+
 #Bienvenida 
 def main():
     while True:
