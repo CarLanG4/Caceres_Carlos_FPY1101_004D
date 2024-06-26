@@ -11,10 +11,12 @@ def agregarAlumno():
     print("Se agrego el alumno correctamente")
 
 
-
 def guardarAlumnos():
-    with open ('Alumnos.txt','w', encoding='utf-8') as archivo:
-        archivo.write(listaAlumnos)
+    with open('Archivo_trabajadores.csv','a', newline='',encoding='utf-8') as archivo_csv:
+        escritor_csv = csv.writer(archivo_csv)
+        escritor_csv.writerow(['nombreAlumno', 'edadAlumno', 'cursoAlumno', 'promedioAlumno'])
+    print("Se registro el alumno correctamente.")
+
 
 #Bienvenida 
 def main():
