@@ -3,10 +3,10 @@ import time
 
 import csv
 listaAlumnos=[]
-matriz=["nombreAlumno",
-        "edadAlumno",
-        "cursoAlumno",
-        "promedioAlumno"]
+matriz=["nombre",
+        "edad",
+        "curso",
+        "promedio"]
 
 def agregarAlumno():
     nombreAlumno=input("Nombre: ")
