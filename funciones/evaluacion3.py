@@ -52,6 +52,7 @@ def main():
                 print("Opción 1- Agregar un estudiante.");
                 time.sleep(1);
                 #funcion
+                agregarAlumno();
             
             elif opcion==2:
                 print("Opción 2- Ver todos los estudiantes.");
