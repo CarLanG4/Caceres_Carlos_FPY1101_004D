@@ -1,6 +1,21 @@
 #Tiempo
 import time
 
+def agregarAlumno():
+    nombreAlumno=input("Nombre: ")
+    edadAlumno=input("Edad: ")
+    cursoAlumno=input("Curso: ")
+    promedioAlumno=input("Promedio: ")
+
+    listaAlumnos.append([nombreAlumno,edadAlumno,cursoAlumno,promedioAlumno])
+    print("Se agrego el alumno correctamente")
+
+
+
+def guardarAlumnos():
+    with open ('Alumnos.txt','w', encoding='utf-8') as archivo:
+        archivo.write(listaAlumnos)
+
 #Bienvenida 
 def main():
     while True:
@@ -55,23 +70,9 @@ def main():
             print("ERROR- Ingrese un número, vuelva a intentarlo.")
             
         
-main()
-
-
-def agregarAlumno():
-    nombreAlumno=input("Nombre: ")
-    edadAlumno=input("Edad: ")
-    cursoAlumno=input("Curso: ")
-    promedioAlumno=input("Promedio: ")
-
-    listaAlumnos.append([nombreAlumno,edadAlumno,cursoAlumno,promedioAlumno])
-    print("Se agrego el alumno correctamente")
 
 
 
-def guardarAlumnos():
-    with open ('Alumnos.txt','w', encoding='utf-8') as archivo:
-        archivo.write(listaAlumnos)
 
 
 
