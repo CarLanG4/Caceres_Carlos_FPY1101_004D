@@ -1,3 +1,5 @@
+#Integrantes: Carlos caceres , Edgar hernandez , Benjamin Moraga
+
 #Tiempo
 import time
 
