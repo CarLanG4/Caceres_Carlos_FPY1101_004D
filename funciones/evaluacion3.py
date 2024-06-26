@@ -3,10 +3,8 @@ import time
 
 import csv
 listaAlumnos=[]
-matriz=["nombre",
-        "edad",
-        "curso",
-        "promedio"]
+
+
 
 def agregarAlumno():
     nombreAlumno=input("Nombre: ")
@@ -20,11 +18,12 @@ def agregarAlumno():
 def ver_estudiantes(listaAlumnos):
     if not listaAlumnos:
         print("no hay ningún alumno o lista creada")
-    for x in listaAlumnos:
-        print(x)
+    else:
+        for x in listaAlumnos:
+            print(x)
 
 def guardar_alumnos():
-            matriz=[[nombreAlumno, edadAlumno,cursoAlumno, promedioAlumno]]
+    matriz=['nombreAlumno', 'edadAlumno','cursoAlumno', 'promedioAlumno']
     with open('Archivo_alumnos.csv','a', newline='',encoding='utf-8') as archivo_csv: #le cambie la w a la 'a'
         escritor_csv = csv.writer(archivo_csv)
         escritor_csv.writerow(['NOMBRE', 'EDAD', 'CURSO', 'PROMEDIO'])
